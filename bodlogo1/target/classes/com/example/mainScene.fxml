@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <Label text="RGB7004 - Куб: Өгөгдсөн кубын эзэлхүүн ба гүйцэд гадаргуугийн талбайг ол. " />
+      <Label text="Ирмэгийн урт" />
+      <TextField fx:id="txt_irmeg" onAction="#onAction" />
+      <Button mnemonicParsing="false" onAction="#onAction" text="Бодох" />
+      <Label text="Кубын эзэлхүүн:" />
+      <Label fx:id="txt_ezelhuun" />
+      <Label text="Гүйцэд гадаргуугийн талбай:" />
+      <Label fx:id="txt_gadarguin_talbai" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
