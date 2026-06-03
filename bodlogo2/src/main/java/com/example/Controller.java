@@ -5,17 +5,23 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
+    @FXML
+    private TextField txt_sek;
 
     @FXML
-    private TextField txt_too;
+    private Label lbl_min;
 
     @FXML
-    private Label lbl_tsifr;
+    private Label lbl_sek;
 
     @FXML
     private void onAction() {
-        int a = Integer.parseInt(txt_too.getText());
-        int digit = Math.abs(a / 10) % 10;
-        lbl_tsifr.setText(String.valueOf(digit));
+        int sek = Integer.parseInt(txt_sek.getText());
+        int min = sek / 60;
+        int sec = sek % 60;
+
+        lbl_min.setText(String.valueOf(min));
+        lbl_sek.setText(String.valueOf(sec));
     }
+
 }

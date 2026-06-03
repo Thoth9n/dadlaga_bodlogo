@@ -7,22 +7,15 @@ import javafx.scene.control.TextField;
 public class Controller {
 
     @FXML
-    private TextField txt_irmeg;
+    private TextField txt_too;
 
     @FXML
-    private Label txt_gadarguin_talbai;
-
-    @FXML
-    private Label txt_ezelhuun;
+    private Label lbl_tsifr;
 
     @FXML
     private void onAction() {
-        double a = Double.parseDouble(txt_irmeg.getText());
-
-        double ezelhuun = Math.pow(a, 3);
-        double gadarguinTalbai = 6 * Math.pow(a, 2);
-
-        txt_ezelhuun.setText(String.valueOf(ezelhuun));
-        txt_gadarguin_talbai.setText(String.valueOf(gadarguinTalbai));
+        int a = Integer.parseInt(txt_too.getText());
+        int digit = Math.abs(a / 10) % 10;
+        lbl_tsifr.setText(String.valueOf(digit));
     }
 }

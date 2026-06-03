@@ -5,19 +5,55 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
-   <children>
-      <Label text="RGB7004 - Куб: Өгөгдсөн кубын эзэлхүүн ба гүйцэд гадаргуугийн талбайг ол. " />
-      <Label text="Ирмэгийн урт" />
-      <TextField fx:id="txt_irmeg" onAction="#onAction" />
-      <Button mnemonicParsing="false" onAction="#onAction" text="Бодох" />
-      <Label text="Кубын эзэлхүүн:" />
-      <Label fx:id="txt_ezelhuun" />
-      <Label text="Гүйцэд гадаргуугийн талбай:" />
-      <Label fx:id="txt_gadarguin_talbai" />
-   </children>
+<VBox alignment="CENTER" prefHeight="320.0" prefWidth="480.0"
+      spacing="14.0"
+      style="-fx-background-color: #f3f7ff;"
+      xmlns="http://javafx.com/javafx/13"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.Controller">
+
    <padding>
-      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      <Insets top="24.0" right="30.0" bottom="24.0" left="30.0" />
    </padding>
+
+   <Label text="RGB7008 - Аравтын орны цифр"
+          style="-fx-text-fill: #173b6c; -fx-font-weight: bold;">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+
+   <Label text="Өгөгдсөн тооны аравтын орны цифрийг ол."
+          style="-fx-text-fill: #52657a;" />
+
+   <TextField fx:id="txt_too"
+              maxWidth="280.0"
+              onAction="#onAction"
+              promptText="Бүхэл тоо оруулна уу"
+              style="-fx-background-radius: 8; -fx-padding: 10;" />
+
+   <Button maxWidth="280.0"
+           onAction="#onAction"
+           text="Аравтын орны цифрийг олох"
+           style="-fx-background-color: #2563eb;
+                  -fx-background-radius: 8;
+                  -fx-text-fill: white;
+                  -fx-font-weight: bold;
+                  -fx-padding: 10 18 10 18;" />
+
+   <Label text="Хариу:" style="-fx-text-fill: #52657a;" />
+
+   <Label fx:id="lbl_tsifr"
+          minHeight="42.0"
+          minWidth="280.0"
+          alignment="CENTER"
+          style="-fx-background-color: white;
+                 -fx-background-radius: 8;
+                 -fx-border-color: #d8e2f0;
+                 -fx-border-radius: 8;
+                 -fx-font-size: 20;
+                 -fx-font-weight: bold;
+                 -fx-text-fill: #173b6c;" />
 </VBox>
