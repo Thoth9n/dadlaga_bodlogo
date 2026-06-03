@@ -1,0 +1,104 @@
+.calculator-root {
+    -fx-background-color: #070707;
+    -fx-font-family: "Georgia";
+}
+
+.display-panel {
+    -fx-background-color: linear-gradient(to bottom, rgba(15, 18, 19, 0.96), rgba(5, 5, 5, 0.96));
+    -fx-background-radius: 6;
+    -fx-border-color: #6d2118, #160706;
+    -fx-border-width: 2, 1;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(238, 65, 32, 0.58), 16, 0.28, 0, 0);
+}
+
+.display-text {
+    -fx-text-fill: #ff7a4f;
+    -fx-font-size: 34px;
+    -fx-padding: 0 8 0 0;
+}
+
+.key-grid {
+    -fx-background-color: rgba(3, 3, 3, 0.72);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(121, 43, 30, 0.78);
+    -fx-border-radius: 8;
+    -fx-border-width: 1.5;
+}
+
+.calc-button {
+    -fx-background-color:
+        linear-gradient(to bottom, #272b2c, #070707),
+        radial-gradient(center 50% 18%, radius 82%, rgba(111, 123, 124, 0.35), rgba(0, 0, 0, 0.0));
+    -fx-background-radius: 5;
+    -fx-border-color: #111, #5d2018;
+    -fx-border-radius: 5;
+    -fx-border-width: 2, 1;
+    -fx-padding: 4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(232, 62, 31, 0.35), 10, 0.25, 0, 0);
+}
+
+.calc-button:hover {
+    -fx-background-color:
+        linear-gradient(to bottom, #353b3b, #0d0a09),
+        radial-gradient(center 50% 18%, radius 82%, rgba(180, 75, 47, 0.22), rgba(0, 0, 0, 0.0));
+    -fx-border-color: #140706, #b44831;
+}
+
+.calc-button:pressed {
+    -fx-translate-y: 1;
+    -fx-background-color: linear-gradient(to bottom, #080808, #1c0b08);
+}
+
+.operator-button {
+    -fx-background-color:
+        linear-gradient(to bottom, #272b2c, #070707),
+        radial-gradient(center 50% 18%, radius 82%, rgba(111, 123, 124, 0.35), rgba(0, 0, 0, 0.0));
+    -fx-background-radius: 5;
+    -fx-border-color: #111, #8d2f21;
+    -fx-border-radius: 5;
+    -fx-border-width: 2, 1;
+    -fx-padding: 4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(232, 62, 31, 0.35), 10, 0.25, 0, 0);
+}
+
+.equals-button {
+    -fx-background-color: linear-gradient(to bottom, #2f312f, #120908);
+    -fx-background-radius: 5;
+    -fx-border-color: #17100f, #b5412b;
+    -fx-border-radius: 5;
+    -fx-border-width: 2, 1;
+    -fx-padding: 4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(232, 62, 31, 0.42), 12, 0.28, 0, 0);
+}
+
+.operator-button:hover,
+.equals-button:hover {
+    -fx-background-color:
+        linear-gradient(to bottom, #353b3b, #0d0a09),
+        radial-gradient(center 50% 18%, radius 82%, rgba(180, 75, 47, 0.22), rgba(0, 0, 0, 0.0));
+}
+
+.operator-button:pressed,
+.equals-button:pressed {
+    -fx-translate-y: 1;
+    -fx-background-color: linear-gradient(to bottom, #080808, #1c0b08);
+}
+
+.display-action-button {
+    -fx-background-color: rgba(5, 5, 5, 0.35);
+    -fx-background-radius: 26;
+    -fx-border-color: #8d2f21;
+    -fx-border-radius: 26;
+    -fx-border-width: 1.5;
+    -fx-padding: 3;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(232, 62, 31, 0.45), 11, 0.24, 0, 0);
+}
+
+.display-action-button:hover {
+    -fx-background-color: rgba(35, 13, 10, 0.62);
+}
